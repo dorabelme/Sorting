@@ -44,13 +44,14 @@ def bubble_sort(arr):
 def count_sort(arr, maximum=-1):
     counts = {}
     for n in arr:
+        if n < maximum:
+            return "Error, negative numbers not allowed in Count Sort"
         if n not in counts:
             counts[n] = 0
         counts[n] += 1
+
     sorted_ = []
     for n, count in sorted(counts.items()):
         for i in range(count):
             sorted_.append(n)
     return sorted_
-
-    return arr
