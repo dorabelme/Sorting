@@ -71,7 +71,8 @@ def merge_sort_in_place(arr, l, r):
     return arr
 
 
-print(merge_sort_in_place([0, 1, 2, 3, 4, 5, 6, 8, 9, 7], 0, 10))
+arr1 = [0, 1, 2, 3, 4, 5, 6, 8, 9, 7]
+print(merge_sort_in_place(arr1, 0, len(arr1)))
 
 
 # STRETCH: implement the Timsort function below

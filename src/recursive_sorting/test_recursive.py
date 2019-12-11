@@ -27,13 +27,13 @@ class RecursiveSortingTests(unittest.TestCase):
         arr5 = random.sample(range(200), 50)
 
         self.assertEqual(merge_sort_in_place(
-            arr1, 0, len(arr1)-1), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-        self.assertEqual(merge_sort_in_place(arr2, 0, len(arr2)-1), [])
-        self.assertEqual(merge_sort_in_place(arr3, 0, len(arr3)-1), [2])
+            arr1, 0, len(arr1)), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        self.assertEqual(merge_sort_in_place(arr2, 0, len(arr2)), [])
+        self.assertEqual(merge_sort_in_place(arr3, 0, len(arr3)), [2])
         self.assertEqual(merge_sort_in_place(
-            arr4, 0, len(arr4)-1), [0, 1, 2, 3, 4, 5])
+            arr4, 0, len(arr4)), [0, 1, 2, 3, 4, 5])
         self.assertEqual(merge_sort_in_place(
-            arr5, 0, len(arr5)-1), sorted(arr5))
+            arr5, 0, len(arr5)), sorted(arr5))
 
 
 if __name__ == '__main__':
